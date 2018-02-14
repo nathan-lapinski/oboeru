@@ -21,7 +21,7 @@ export class MainComponent implements OnInit {
     this.mockDataService.getData().subscribe(data => {
       this.data = data;
       this.questions = this.data.map(o => o.examples);
-      this.currentQuestion = this.questions.slice(0, 1)[0][0];
+      this.currentQuestion = this.questions.splice(0, 1)[0][0];
     });
   }
 
@@ -29,6 +29,7 @@ export class MainComponent implements OnInit {
     console.log('GOT: ', this.currentAnswer);
     if (this.currentAnswer === this.currentQuestion.answer) {
       console.log('SUCCESS!!');
+      this.currentQuestion = this.questions.splice(0, 1)[0][0];
     } else {
       console.log('FAILURE');
     }
