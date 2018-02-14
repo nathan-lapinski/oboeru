@@ -14,7 +14,8 @@ import { MainComponent } from './main/main.component';
     MainComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [MockDataService],
   bootstrap: [AppComponent]
