@@ -232,6 +232,62 @@ export class MockDataService {
         target: '用意',
         meaning: 'Preparations to go out'
       }]
+    },
+    {
+      character: '育',
+      meanings: ['Bring up, grow up, raise, rear'],
+      on: ['イク'],
+      kun: ['そだつ','そだてる','はぐくむ'],
+      strokes: 8,
+      examples: [{
+        text: '教育',
+        answer: 'きょういく',
+        target: '教育',
+        meaning: 'education'
+      }, {
+        text: '体育館',
+        answer: 'たいいくかん',
+        target: '体育館',
+        meaning: 'gymnasium'
+      }, {
+        text: '親鳥がひなを育む',
+        answer: 'はぐくむ',
+        target: '育む',
+        meaning: 'Parent bird raises its young'
+      }, {
+        text: 'ベランダで野菜を育てる',
+        answer: 'そだてる',
+        target: '育てる',
+        meaning: 'grow plants on the veranda'
+      }]
+    },
+    {
+      character: '員',
+      meanings: ['Employee, member, number, the one in charge'],
+      on: ['イク'],
+      kun: ['そだつ','そだてる','はぐくむ'],
+      strokes: 8,
+      examples: [{
+        text: '教育',
+        answer: 'きょういく',
+        target: '教育',
+        meaning: 'education'
+      }, {
+        text: '体育館',
+        answer: 'たいいくかん',
+        target: '体育館',
+        meaning: 'gymnasium'
+      }, {
+        text: '親鳥がひなを育む',
+        answer: 'はぐくむ',
+        target: '育む',
+        meaning: 'Parent bird raises its young'
+      }, {
+        text: 'ベランダで野菜を育てる',
+        answer: 'そだてる',
+        target: '育てる',
+        meaning: 'grow plants on the veranda'
+      }]
     }
   ];
   constructor() { }
