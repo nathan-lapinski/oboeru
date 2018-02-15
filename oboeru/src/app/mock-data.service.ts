@@ -202,7 +202,7 @@ export class MockDataService {
     },
     {
       character: '意',
-      meanings: ['Relax', 'Cheap', 'Low', 'Quiet', 'Rested', 'Contented', 'Peaceful'],
+      meanings: ['Idea, mind, heart, taste, thought, desire, care, liking'],
       on: ['イ'],
       kun: [],
       strokes: 13,
