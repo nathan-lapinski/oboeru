@@ -148,6 +148,90 @@ export class MockDataService {
         target: '暗',
         meaning: 'Proceed through the darkness'
       }]
+    },
+    {
+      character: '医',
+      meanings: ['Doctor', 'Medicine'],
+      on: ['イ'],
+      kun: [],
+      strokes: 7,
+      examples: [{
+        text: '医院',
+        answer: 'いいん',
+        target: '医院',
+        meaning: 'Doctors office, clinic'
+      }, {
+        text: '医学',
+        answer: 'いがく',
+        target: '医学',
+        meaning: 'Medical science, medicine'
+      }, {
+        text: '歯科医',
+        answer: 'しかい',
+        target: '歯科医',
+        meaning: 'Dentist'
+      }, {
+        text: '医者の話を聞く',
+        answer: 'いしゃ',
+        target: '医者',
+        meaning: 'Doctor'
+      }]
+    },
+    {
+      character: '委',
+      meanings: ['Committee, entrust to, leave to, devote, discard'],
+      on: ['イ'],
+      kun: ['ゆだねる'],
+      strokes: 8,
+      examples: [{
+        text: '委員会',
+        answer: 'いいんかい',
+        target: '委員会',
+        meaning: 'Committee'
+      }, {
+        text: '学級委員',
+        answer: 'がっきゅういいん',
+        target: '学級委員',
+        meaning: 'Class representative'
+      }, {
+        text: '運命に身を委ねる',
+        answer: 'ゆだねる',
+        target: '委ねる',
+        meaning: 'Leave yourself to fate'
+      }]
+    },
+    {
+      character: '意',
+      meanings: ['Relax', 'Cheap', 'Low', 'Quiet', 'Rested', 'Contented', 'Peaceful'],
+      on: ['イ'],
+      kun: [],
+      strokes: 13,
+      examples: [{
+        text: '意見',
+        answer: 'いけん',
+        target: '意見',
+        meaning: 'opinion'
+      }, {
+        text: '意味',
+        answer: 'いみ',
+        target: '意味',
+        meaning: 'meaning'
+      }, {
+        text: '決意',
+        answer: 'けつい',
+        target: '決意',
+        meaning: 'decision'
+      }, {
+        text: '注意',
+        answer: 'ちゅうい',
+        target: '注意',
+        meaning: 'caution'
+      }, {
+        text: '出かける用意をする',
+        answer: 'ようい',
+        target: '用意',
+        meaning: 'Preparations to go out'
+      }]
     }
   ];
   constructor() { }
