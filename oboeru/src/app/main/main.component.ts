@@ -12,10 +12,11 @@ export class MainComponent implements OnInit {
   public data = [];
   public questions = [];
   public currentAnswer = '';
-  public currentQuestion = {answer: '', text: ''};
+  public currentQuestion = {answer: '', text: '', meaning: ''};
   private completed = [];
   public correctAnswers = 0;
   public incorrectAnswers = 0;
+  public currentMeaning = '';
   private maxQuestionCount = 10;
   private questionCount = 0;
 
@@ -40,12 +41,16 @@ export class MainComponent implements OnInit {
       console.log('FAILURE');
     }
     if (this.questionCount >= this.maxQuestionCount) {
-      this.currentQuestion = {text: 'Game Over!', answer: ''};
+      this.currentQuestion = {text: 'Game Over!', answer: '', meaning: ''};
       this.endGame();
     } else {
       this.currentQuestion = this.getRandomQuestion();
     }
     this.clearCurrentAnswer();
+  }
+
+  public meaning(): void {
+    this.currentMeaning = this.currentQuestion.meaning;
   }
 
   private endGame(): void {
