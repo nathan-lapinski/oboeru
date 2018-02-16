@@ -264,31 +264,143 @@ export class MockDataService {
     {
       character: '員',
       meanings: ['Employee, member, number, the one in charge'],
-      on: ['イク'],
-      kun: ['そだつ','そだてる','はぐくむ'],
-      strokes: 8,
+      on: ['イン'],
+      kun: [],
+      strokes: 10,
       examples: [{
-        text: '教育',
-        answer: 'きょういく',
-        target: '教育',
-        meaning: 'education'
+        text: '係員',
+        answer: 'かかりいん',
+        target: '係員',
+        meaning: 'clerk, official'
       }, {
-        text: '体育館',
-        answer: 'たいいくかん',
-        target: '体育館',
-        meaning: 'gymnasium'
+        text: '全員',
+        answer: 'ぜんいん',
+        target: '全員',
+        meaning: 'all members, everyone'
       }, {
-        text: '親鳥がひなを育む',
-        answer: 'はぐくむ',
-        target: '育む',
-        meaning: 'Parent bird raises its young'
+        text: '店員',
+        answer: 'てんいん',
+        target: '店員',
+        meaning: 'store employee'
       }, {
-        text: 'ベランダで野菜を育てる',
-        answer: 'そだてる',
-        target: '育てる',
-        meaning: 'grow plants on the veranda'
+        text: '父は駅員だ',
+        answer: 'えきいん',
+        target: '駅員',
+        meaning: 'my father is a station employee'
       }]
-    }
+    },
+    {
+      character: '院',
+      meanings: ['Inst., institution, temple, mansion, school'],
+      on: ['イン'],
+      kun: [],
+      strokes: 10,
+      examples: [{
+        text: '院長',
+        answer: 'いんちょう',
+        target: '院長',
+        meaning: 'director'
+      }, {
+        text: '寺院',
+        answer: 'じいん',
+        target: '寺院',
+        meaning: 'temple'
+      }, {
+        text: '病院',
+        answer: 'びょういん',
+        target: '病院',
+        meaning: 'hospital'
+      }, {
+        text: '入院の用意をする',
+        answer: 'にゅういん',
+        target: '入院',
+        meaning: 'preparing for hospitalization'
+      }]
+    },
+    {
+      character: '飲',
+      meanings: ['Drink, smoke, take'],
+      on: ['イン'],
+      kun: ['のむ'],
+      strokes: 12,
+      examples: [{
+        text: '飲食店',
+        answer: 'いんしょくてん',
+        target: '飲食店',
+        meaning: 'restaurant'
+      }, {
+        text: '飲料',
+        answer: 'いんりょう',
+        target: '飲料',
+        meaning: 'beverage, drink'
+      }, {
+        text: '飲み水',
+        answer: 'のみみず',
+        target: '飲み水',
+        meaning: 'drinking water'
+      }, {
+        text: 'お茶を飲む',
+        answer: 'のむ',
+        target: '飲む',
+        meaning: 'drink tea'
+      }]
+    }/*,
+    {
+      character: '員',
+      meanings: ['Employee, member, number, the one in charge'],
+      on: ['イン'],
+      kun: [],
+      strokes: 10,
+      examples: [{
+        text: '係員',
+        answer: 'かかりいん',
+        target: '係員',
+        meaning: 'clerk, official'
+      }, {
+        text: '全員',
+        answer: 'ぜんいん',
+        target: '全員',
+        meaning: 'all members, everyone'
+      }, {
+        text: '店員',
+        answer: 'てんいん',
+        target: '店員',
+        meaning: 'store employee'
+      }, {
+        text: '父は駅員だ',
+        answer: 'えきいん',
+        target: '駅員',
+        meaning: 'my father is a station employee'
+      }]
+    },
+    {
+      character: '員',
+      meanings: ['Employee, member, number, the one in charge'],
+      on: ['イン'],
+      kun: [],
+      strokes: 10,
+      examples: [{
+        text: '係員',
+        answer: 'かかりいん',
+        target: '係員',
+        meaning: 'clerk, official'
+      }, {
+        text: '全員',
+        answer: 'ぜんいん',
+        target: '全員',
+        meaning: 'all members, everyone'
+      }, {
+        text: '店員',
+        answer: 'てんいん',
+        target: '店員',
+        meaning: 'store employee'
+      }, {
+        text: '父は駅員だ',
+        answer: 'えきいん',
+        target: '駅員',
+        meaning: 'my father is a station employee'
+      }]
+    }*/
   ];
   constructor() { }
 
