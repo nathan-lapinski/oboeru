@@ -18,3 +18,16 @@
   background-color: green;
   color: white;
 }
+
+#scoreBox {
+  margin: auto;
+  width: 80px;
+}
+
+#correctAnswers {
+  color: green;
+}
+
+#incorrectAnswers {
+  color: red;
+}

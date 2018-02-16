@@ -14,8 +14,8 @@ export class MainComponent implements OnInit {
   public currentAnswer = '';
   public currentQuestion = {answer: '', text: ''};
   private completed = [];
-  private correctAnswers = 0;
-  private incorrectAnswers = 0;
+  public correctAnswers = 0;
+  public incorrectAnswers = 0;
   private maxQuestionCount = 10;
   private questionCount = 0;
 
@@ -45,6 +45,7 @@ export class MainComponent implements OnInit {
     } else {
       this.currentQuestion = this.getRandomQuestion();
     }
+    this.clearCurrentAnswer();
   }
 
   private endGame(): void {
@@ -54,6 +55,10 @@ export class MainComponent implements OnInit {
   private flatten = list => list.reduce(
     (a, b) => a.concat(Array.isArray(b) ? this.flatten(b) : b), []
   )
+
+  private clearCurrentAnswer(): void {
+    this.currentAnswer = '';
+  }
 
   private getRandomQuestion(): any {
     const length = this.questions.length;

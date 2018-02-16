@@ -1,3 +1,7 @@
 <div id="questionBox">{{currentQuestion.text}}</div>
 <input id="answerBox" [(ngModel)]="currentAnswer" type="text"/>
+<div id="scoreBox"> Score:
+  <span id="correctAnswers">{{correctAnswers}}</span>
+  <span id="incorrectAnswers">{{incorrectAnswers}}</span>
+</div>
 <button id="answerButton" (click)="answer()">解答</button>
