@@ -16,6 +16,8 @@ export class MainComponent implements OnInit {
   private completed = [];
   private correctAnswers = 0;
   private incorrectAnswers = 0;
+  private maxQuestionCount = 10;
+  private questionCount = 0;
 
   constructor(private mockDataService: MockDataService) { }
 
@@ -23,19 +25,23 @@ export class MainComponent implements OnInit {
     this.mockDataService.getData().subscribe(data => {
       this.data = data;
       this.questions = this.flatten(this.data.map(o => o.examples));
-      this.currentQuestion = this.questions.splice(0, 1)[0];
+      this.currentQuestion = this.getRandomQuestion();
     });
   }
 
   public answer(): void {
     console.log('GOT: ', this.currentAnswer);
+    this.questionCount++;
     if (this.currentAnswer === this.currentQuestion.answer) {
       console.log('SUCCESS!!');
       this.correctAnswers++;
-      this.currentQuestion = this.questions.length ? this.questions.splice(0, 1)[0] : this.endGame();
+      this.currentQuestion = this.getRandomQuestion();
     } else {
       this.incorrectAnswers++;
       console.log('FAILURE');
+    }
+    if (this.questionCount >= this.maxQuestionCount) {
+      this.endGame();
     }
   }
 
@@ -46,4 +52,10 @@ export class MainComponent implements OnInit {
   private flatten = list => list.reduce(
     (a, b) => a.concat(Array.isArray(b) ? this.flatten(b) : b), []
   )
+
+  private getRandomQuestion(): any {
+    const length = this.questions.length;
+    const index = Math.floor(Math.random() * (length));
+    return this.questions.splice(index, 1)[0];
+  }
 }
