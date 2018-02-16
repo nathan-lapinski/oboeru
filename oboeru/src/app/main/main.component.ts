@@ -35,13 +35,15 @@ export class MainComponent implements OnInit {
     if (this.currentAnswer === this.currentQuestion.answer) {
       console.log('SUCCESS!!');
       this.correctAnswers++;
-      this.currentQuestion = this.getRandomQuestion();
     } else {
       this.incorrectAnswers++;
       console.log('FAILURE');
     }
     if (this.questionCount >= this.maxQuestionCount) {
+      this.currentQuestion = {text: 'Game Over!', answer: ''};
       this.endGame();
+    } else {
+      this.currentQuestion = this.getRandomQuestion();
     }
   }
 
