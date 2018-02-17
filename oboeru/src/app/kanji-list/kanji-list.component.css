@@ -1,0 +1,18 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.kanjiDisplay {
+  font-size: 36px;
+  float: left;
+  margin: 15px;
+  padding: 5px;
+}
+
+.kanjiDisplay:hover {
+  font-size: 48px;
+  color: green;
+  cursor: pointer;
+}
