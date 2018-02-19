@@ -1,3 +1,5 @@
-<ul *ngFor='let kanji of kanjiList'>
-<li class='kanjiDisplay'>{{kanji.character}}</li>
+<ul *ngFor='let k of kanjiList'>
+<li class='kanjiDisplay'><a [routerLink]="['/kanji', k.character]">{{k.character}}</a></li>
 </ul>
+
+<!-- (click)="kanjiDetail(kanji)" -->

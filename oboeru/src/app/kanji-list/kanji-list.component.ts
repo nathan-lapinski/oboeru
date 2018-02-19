@@ -15,4 +15,8 @@ export class KanjiListComponent implements OnInit {
     this.mockDataService.getData().subscribe(data => this.kanjiList = data);
   }
 
+  public kanjiDetail(kanji: any): void {
+    console.log('clicked on: ', kanji);
+  }
+
 }

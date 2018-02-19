@@ -408,4 +408,8 @@ export class MockDataService {
     return Observable.of(this.kanken8);
   }
 
+  getKanji(kanji: any): any {
+    return Observable.of(this.kanken8.find(c => c.character === kanji));
+  }
+
 }
