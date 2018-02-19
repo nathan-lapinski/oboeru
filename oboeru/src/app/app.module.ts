@@ -11,6 +11,7 @@ import { KanjiListComponent } from './kanji-list/kanji-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { KanjiDetailComponent } from './kanji-detail/kanji-detail.component';
 import { KanjiGuardService } from './kanji-guard.service';
+import { KanjiCanvasComponent } from './kanji-canvas/kanji-canvas.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { KanjiGuardService } from './kanji-guard.service';
     MainComponent,
     KanjiListComponent,
     PageNotFoundComponent,
-    KanjiDetailComponent
+    KanjiDetailComponent,
+    KanjiCanvasComponent
   ],
   imports: [
     BrowserModule,
