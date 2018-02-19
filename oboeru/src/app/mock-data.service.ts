@@ -344,63 +344,68 @@ export class MockDataService {
         target: '飲む',
         meaning: 'drink tea'
       }]
-    }/*,
+    },
     {
-      character: '員',
-      meanings: ['Employee, member, number, the one in charge'],
-      on: ['イン'],
-      kun: [],
-      strokes: 10,
+      character: '運',
+      meanings: ['Carry, luck, destiny, fate, lot, transport, progress, advance'],
+      on: ['ウン'],
+      kun: ['はこぶ'],
+      strokes: 12,
       examples: [{
-        text: '係員',
-        answer: 'かかりいん',
-        target: '係員',
-        meaning: 'clerk, official'
+        text: '運送',
+        answer: 'うんそう',
+        target: '運送',
+        meaning: 'transport; freight; shipping​'
       }, {
-        text: '全員',
-        answer: 'ぜんいん',
-        target: '全員',
-        meaning: 'all members, everyone'
+        text: '運転',
+        answer: 'うんてん',
+        target: '運転',
+        meaning: 'operation (of a machine, etc.); operating; running; run​'
       }, {
-        text: '店員',
-        answer: 'てんいん',
-        target: '店員',
-        meaning: 'store employee'
+        text: '運動場',
+        answer: 'うんどうじょう',
+        target: '運動場',
+        meaning: 'sports ground; playing field; playground​'
       }, {
-        text: '父は駅員だ',
+        text: '幸運',
         answer: 'えきいん',
         target: '駅員',
-        meaning: 'my father is a station employee'
+        meaning: 'good luck; fortune​'
+      }, {
+        text: '荷物を運ぶ',
+        answer: 'はこぶ',
+        target: '運ぶ',
+        meaning: 'to carry/transport luggage'
       }]
     },
     {
-      character: '員',
-      meanings: ['Employee, member, number, the one in charge'],
-      on: ['イン'],
-      kun: [],
-      strokes: 10,
+      character: '泳',
+      meanings: ['Swim'],
+      on: ['エイ'],
+      kun: ['およぐ'],
+      strokes: 8,
       examples: [{
-        text: '係員',
-        answer: 'かかりいん',
-        target: '係員',
-        meaning: 'clerk, official'
+        text: '競泳',
+        answer: 'きょうえい',
+        target: '競泳',
+        meaning: 'competitive swimming; swimming race​'
       }, {
-        text: '全員',
-        answer: 'ぜんいん',
-        target: '全員',
-        meaning: 'all members, everyone'
+        text: '水泳',
+        answer: 'すいえい',
+        target: '水泳',
+        meaning: 'swimming​'
       }, {
-        text: '店員',
-        answer: 'てんいん',
-        target: '店員',
-        meaning: 'store employee'
+        text: '平泳ぐ',
+        answer: 'およぐ',
+        target: '泳ぐ',
+        meaning: 'to swim'
       }, {
-        text: '父は駅員だ',
-        answer: 'えきいん',
-        target: '駅員',
-        meaning: 'my father is a station employee'
+        text: '遠泳大会に出場する',
+        answer: 'えい',
+        target: '泳',
+        meaning: 'participate in the swimming tournament'
       }]
-    }*/
+    }
   ];
   constructor() { }
 
