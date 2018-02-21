@@ -4,3 +4,8 @@
   width: 50px;
   font-size: 72px;
 }
+
+#backButton {
+  border: 2px solid black;
+  cursor: pointer;
+}
