@@ -405,6 +405,39 @@ export class MockDataService {
         target: '泳',
         meaning: 'participate in the swimming tournament'
       }]
+    },
+    {
+      character: '駅',
+      meanings: ['Station'],
+      on: ['エキ'],
+      kun: [],
+      strokes: 14,
+      examples: [{
+        text: '駅長',
+        answer: 'えきちょう',
+        target: '駅長',
+        meaning: 'station master'
+      }, {
+        text: '駅伝',
+        answer: 'えきでん',
+        target: '駅伝',
+        meaning: 'long-distance relay race'
+      }, {
+        text: '駅前',
+        answer: 'えきまえ',
+        target: '駅前',
+        meaning: 'in front of the station'
+      }, {
+        text: '終着駅',
+        answer: 'しゅうちゃくえき',
+        target: '終着駅',
+        meaning: 'terminal station'
+      }, {
+        text: '次の駅でおりる',
+        answer: 'えき',
+        target: '駅',
+        meaning: 'To get off at the next station'
+      }]
     }
   ];
   constructor() { }
