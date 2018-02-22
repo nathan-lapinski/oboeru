@@ -5,6 +5,9 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
+
+import { DndModule } from 'ng2-dnd';
+
 import { MockDataService } from './mock-data.service';
 import { MainComponent } from './main/main.component';
 import { KanjiListComponent } from './kanji-list/kanji-list.component';
@@ -26,6 +29,7 @@ import { KanjiCanvasComponent } from './kanji-canvas/kanji-canvas.component';
   imports: [
     BrowserModule,
     FormsModule,
+    DndModule.forRoot(),
     RouterModule.forRoot([
       { path: 'home', component: MainComponent},
       { path: 'kanji', component: KanjiListComponent },

@@ -16,3 +16,11 @@ ul {
   color: green;
   cursor: pointer;
 }
+
+#customListContainer {
+  float: right;
+  background-color: lightsteelblue;
+  width: 400px;
+  height: 600px; 
+  border: 1px solid black;
+}

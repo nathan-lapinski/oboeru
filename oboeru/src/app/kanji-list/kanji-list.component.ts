@@ -9,6 +9,7 @@ import { MockDataService } from '../mock-data.service';
 export class KanjiListComponent implements OnInit {
 
   public kanjiList = [];
+  public receivedData:any[] = [];
   constructor(private mockDataService: MockDataService) { }
 
   ngOnInit() {
@@ -17,6 +18,10 @@ export class KanjiListComponent implements OnInit {
 
   public kanjiDetail(kanji: any): void {
     console.log('clicked on: ', kanji);
+  }
+
+  public transferDataSuccess($event: any) {
+    this.receivedData.push($event);
   }
 
 }

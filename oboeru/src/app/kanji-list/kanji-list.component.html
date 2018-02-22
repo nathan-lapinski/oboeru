@@ -1,3 +1,10 @@
-<ul *ngFor='let k of kanjiList'>
-<li class='kanjiDisplay'><a [routerLink]="['/kanji', k.character]">{{k.character}}</a></li>
+<ul>
+<li *ngFor='let k of kanjiList' class='kanjiDisplay' dnd-draggable [dragEnabled]="true" [dragData]="k"><a [routerLink]="['/kanji', k.character]">{{k.character}}</a></li>
 </ul>
+
+Create a custom list of characters
+<div id="customListContainer" dnd-droppable (onDropSuccess)="transferDataSuccess($event)">
+    <div class="panel-body">
+        <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">{{data.dragData.character}}</div>
+    </div>
+</div>
