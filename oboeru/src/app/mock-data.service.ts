@@ -439,7 +439,152 @@ export class MockDataService {
         target: '駅',
         meaning: 'To get off at the next station'
       }]
-    }
+    },
+    {
+      character: '央',
+      meanings: ['Center, middle'],
+      on: ['オウ'],
+      kun: [],
+      strokes: 5,
+      examples: [{
+        text: '中央',
+        answer: 'ちゅうおう',
+        target: '中央',
+        meaning: 'Center, central'
+      }, {
+        text: '中央線',
+        answer: 'おう',
+        target: '央',
+        meaning: 'Chuo line. Central line.'
+      }, {
+        text: '中央口で待ち合わせる',
+        answer: 'おう',
+        target: '央',
+        meaning: 'Meet at the south central gate'
+      }]
+    },
+    {
+      character: '横',
+      meanings: ['Sideways, side, horizontal, width, woof'],
+      on: ['オウ'],
+      kun: ['よこ'],
+      strokes: 15,
+      examples: [{
+        text: '横断歩道',
+        answer: 'おうだんほどう',
+        target: '横断歩道',
+        meaning: 'cross walk'
+      }, {
+        text: '横顔',
+        answer: 'よこがお',
+        target: '横顔',
+        meaning: 'profile; face in profile; face seen from the side​'
+      }, {
+        text: '話が横道にそれる',
+        answer: 'よこみち',
+        target: '横道',
+        meaning: 'The conversation goes on a tangent'
+      }]
+    },
+    {
+      character: '屋',
+      meanings: ['Roof, house, shop, dealer, seller'],
+      on: ['オク'],
+      kun: ['や'],
+      strokes: 9,
+      examples: [{
+        text: '屋上',
+        answer: 'おくじょう',
+        target: '屋上',
+        meaning: 'rooftop'
+      }, {
+        text: '屋台',
+        answer: 'やたい',
+        target: '屋台',
+        meaning: 'food cart, stall'
+      }, {
+        text: '花屋',
+        answer: 'はなや',
+        target: '花屋',
+        meaning: 'florist'
+      }, {
+        text: '八百屋',
+        answer: 'やおや',
+        target: '八百屋',
+        meaning: 'greengrocer'
+      }, {
+        text: '部屋のそうじをする',
+        answer: 'へや',
+        target: '部屋',
+        meaning: 'To clean the room'
+      }]
+    }/*,
+    {
+      character: '駅',
+      meanings: ['Station'],
+      on: ['エキ'],
+      kun: [],
+      strokes: 12,
+      examples: [{
+        text: '駅長',
+        answer: 'えきちょう',
+        target: '駅長',
+        meaning: 'station master'
+      }, {
+        text: '駅伝',
+        answer: 'えきでん',
+        target: '駅伝',
+        meaning: 'long-distance relay race'
+      }, {
+        text: '駅前',
+        answer: 'えきまえ',
+        target: '駅前',
+        meaning: 'in front of the station'
+      }, {
+        text: '終着駅',
+        answer: 'しゅうちゃくえき',
+        target: '終着駅',
+        meaning: 'terminal station'
+      }, {
+        text: '次の駅でおりる',
+        answer: 'えき',
+        target: '駅',
+        meaning: 'To get off at the next station'
+      }]
+    },
+    {
+      character: '駅',
+      meanings: ['Station'],
+      on: ['エキ'],
+      kun: [],
+      strokes: 4,
+      examples: [{
+        text: '駅長',
+        answer: 'えきちょう',
+        target: '駅長',
+        meaning: 'station master'
+      }, {
+        text: '駅伝',
+        answer: 'えきでん',
+        target: '駅伝',
+        meaning: 'long-distance relay race'
+      }, {
+        text: '駅前',
+        answer: 'えきまえ',
+        target: '駅前',
+        meaning: 'in front of the station'
+      }, {
+        text: '終着駅',
+        answer: 'しゅうちゃくえき',
+        target: '終着駅',
+        meaning: 'terminal station'
+      }, {
+        text: '次の駅でおりる',
+        answer: 'えき',
+        target: '駅',
+        meaning: 'To get off at the next station'
+      }]
+    }*/
   ];
   constructor() { }
 
