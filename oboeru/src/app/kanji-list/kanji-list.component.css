@@ -17,6 +17,10 @@ ul {
   cursor: pointer;
 }
 
+.selectedKanji {
+  font-size: 36px;
+}
+
 #customListContainer {
   float: right;
   background-color: lightsteelblue;

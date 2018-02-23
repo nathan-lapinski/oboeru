@@ -5,6 +5,7 @@
 Create a custom list of characters
 <div id="customListContainer" dnd-droppable (onDropSuccess)="transferDataSuccess($event)">
     <div class="panel-body">
-        <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData">{{data.dragData.character}}</div>
+        <div [hidden]="!receivedData.length > 0" *ngFor="let data of receivedData" class="selectedKanji">{{data.dragData.character}}</div>
     </div>
 </div>
+<button id="createCustomListButton" (click)="createList()">Create</button>

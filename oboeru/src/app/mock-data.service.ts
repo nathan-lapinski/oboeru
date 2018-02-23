@@ -4,6 +4,7 @@ import 'rxjs/add/observable/of';
 
 @Injectable()
 export class MockDataService {
+  private customListData: any[] = [];
 
   private kanken9 = [
     {
@@ -442,12 +443,24 @@ export class MockDataService {
   ];
   constructor() { }
 
-  getData(): Observable<any> {
+  public getData(): Observable<any> {
     return Observable.of(this.kanken8);
   }
 
-  getKanji(kanji: any): any {
+  public getKanji(kanji: any): any {
     return Observable.of(this.kanken8.find(c => c.character === kanji));
+  }
+
+  public getListData(): any {
+    return this.customListData;
+  }
+
+  public addListData(data: any): void {
+    this.customListData.push(data);
+  }
+
+  public hasListData(): boolean {
+    return this.customListData.length > 0;
   }
 
 }

@@ -23,11 +23,18 @@ export class MainComponent implements OnInit {
   constructor(private mockDataService: MockDataService) { }
 
   ngOnInit() {
-    this.mockDataService.getData().subscribe(data => {
-      this.data = data;
+    // TODO: This is a disgusting hack for testing. will be removed once there is a back end for storing custom lists
+    if (this.mockDataService.hasListData()) {
+      this.data = this.mockDataService.getListData();
       this.questions = this.flatten(this.data.map(o => o.examples));
       this.currentQuestion = this.getRandomQuestion();
-    });
+    } else {
+      this.mockDataService.getData().subscribe(data => {
+        this.data = data;
+        this.questions = this.flatten(this.data.map(o => o.examples));
+        this.currentQuestion = this.getRandomQuestion();
+      });
+    }
   }
 
   public answer(): void {
@@ -40,7 +47,7 @@ export class MainComponent implements OnInit {
       this.incorrectAnswers++;
       console.log('FAILURE');
     }
-    if (this.questionCount >= this.maxQuestionCount) {
+    if (this.questionCount > this.questions.length || this.questionCount >= this.maxQuestionCount) {
       this.currentQuestion = {text: 'Game Over!', answer: '', meaning: ''};
       this.endGame();
     } else {

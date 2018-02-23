@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MockDataService } from '../mock-data.service';
 
 @Component({
@@ -10,7 +11,8 @@ export class KanjiListComponent implements OnInit {
 
   public kanjiList = [];
   public receivedData:any[] = [];
-  constructor(private mockDataService: MockDataService) { }
+  constructor(private router: Router,
+              private mockDataService: MockDataService) { }
 
   ngOnInit() {
     this.mockDataService.getData().subscribe(data => this.kanjiList = data);
@@ -22,6 +24,15 @@ export class KanjiListComponent implements OnInit {
 
   public transferDataSuccess($event: any) {
     this.receivedData.push($event);
+  }
+
+  public createList(): void {
+    // TODO: Send the received data to the main component, so it can use the list for questions.
+    // TODO: In the future, this needs to get saved to the backend somehow, so that the data service can retrieve it.
+
+    // this is dumb, just a temp until a real backend is in place
+    this.mockDataService.addListData(this.receivedData[0].dragData);
+    this.router.navigate(['/home'])
   }
 
 }
