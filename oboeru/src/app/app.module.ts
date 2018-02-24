@@ -10,21 +10,15 @@ import { DndModule } from 'ng2-dnd';
 
 import { MockDataService } from './mock-data.service';
 import { MainComponent } from './main/main.component';
-import { KanjiListComponent } from './kanji-list/kanji-list.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { KanjiDetailComponent } from './kanji-detail/kanji-detail.component';
-import { KanjiGuardService } from './kanji-guard.service';
-import { KanjiCanvasComponent } from './kanji-canvas/kanji-canvas.component';
+import { KanjiModule } from './kanji/kanji.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppNavbarComponent,
     MainComponent,
-    KanjiListComponent,
-    PageNotFoundComponent,
-    KanjiDetailComponent,
-    KanjiCanvasComponent
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -32,15 +26,12 @@ import { KanjiCanvasComponent } from './kanji-canvas/kanji-canvas.component';
     DndModule.forRoot(),
     RouterModule.forRoot([
       { path: 'home', component: MainComponent},
-      { path: 'kanji', component: KanjiListComponent },
-      { path: 'kanji/:data',
-        canActivate: [ KanjiGuardService ],
-        component: KanjiDetailComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full'},
       { path: '**', component: PageNotFoundComponent}
-    ])
+    ]),
+    KanjiModule
   ],
-  providers: [MockDataService, KanjiGuardService],
+  providers: [MockDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

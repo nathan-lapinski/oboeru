@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { MockDataService } from '../mock-data.service';
+import { MockDataService } from '../../mock-data.service';
 
 @Component({
   selector: 'app-kanji-list',
