@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+
 import { MockDataService } from '../../mock-data.service';
+
+import { Kanji } from '../kanji';
 
 @Component({
   selector: 'app-kanji-list',
@@ -9,13 +12,13 @@ import { MockDataService } from '../../mock-data.service';
 })
 export class KanjiListComponent implements OnInit {
 
-  public kanjiList = [];
+  public kanjiList: Kanji[] = [];
   public receivedData:any[] = [];
   constructor(private router: Router,
               private mockDataService: MockDataService) { }
 
   ngOnInit() {
-    this.mockDataService.getData().subscribe(data => this.kanjiList = data);
+    this.mockDataService.getData().subscribe((data: Kanji[]) => this.kanjiList = data);
   }
 
   public kanjiDetail(kanji: any): void {

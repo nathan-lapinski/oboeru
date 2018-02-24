@@ -2,11 +2,13 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 
+import { Kanji } from './kanji/kanji';
+
 @Injectable()
 export class MockDataService {
   private customListData: any[] = [];
 
-  private kanken9 = [
+  private kanken9: Kanji[] = [
     {
       character: '話',
       meanings: ['Tale', 'Talk'],
