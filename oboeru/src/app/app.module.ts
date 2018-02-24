@@ -5,9 +5,6 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
-
-import { DndModule } from 'ng2-dnd';
-
 import { MockDataService } from './mock-data.service';
 import { MainComponent } from './main/main.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -23,7 +20,6 @@ import { KanjiModule } from './kanji/kanji.module';
   imports: [
     BrowserModule,
     FormsModule,
-    DndModule.forRoot(),
     RouterModule.forRoot([
       { path: 'home', component: MainComponent},
       { path: '', redirectTo: 'home', pathMatch: 'full'},

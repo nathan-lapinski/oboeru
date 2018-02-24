@@ -1,5 +1,4 @@
 import { NgModule } from '@angular/core';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DndModule } from 'ng2-dnd';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
@@ -12,7 +11,6 @@ import { KanjiCanvasComponent } from './kanji-canvas/kanji-canvas.component';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
     DndModule.forRoot(),
     RouterModule.forChild([
       { path: 'kanji', component: KanjiListComponent },
