@@ -26,7 +26,7 @@ export class KanjiListComponent implements OnInit {
   }
 
   public transferDataSuccess($event: any) {
-    this.receivedData.push($event);
+    this.receivedData.push($event.dragData);
   }
 
   public createList(): void {
@@ -34,7 +34,7 @@ export class KanjiListComponent implements OnInit {
     // TODO: In the future, this needs to get saved to the backend somehow, so that the data service can retrieve it.
 
     // this is dumb, just a temp until a real backend is in place
-    this.mockDataService.addListData(this.receivedData[0].dragData);
+    this.mockDataService.addListData(this.receivedData);
     this.router.navigate(['/home'])
   }
 

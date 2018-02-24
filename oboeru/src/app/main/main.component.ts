@@ -11,6 +11,7 @@ export class MainComponent implements OnInit {
   // TODO: Clean this up, and add a data model for answers, etc.
   public data = [];
   public questions = [];
+  public testQuestions = [];
   public currentAnswer = '';
   public currentQuestion = {answer: '', text: '', meaning: ''};
   private completed = [];
@@ -23,18 +24,11 @@ export class MainComponent implements OnInit {
   constructor(private mockDataService: MockDataService) { }
 
   ngOnInit() {
-    // TODO: This is a disgusting hack for testing. will be removed once there is a back end for storing custom lists
-    if (this.mockDataService.hasListData()) {
-      this.data = this.mockDataService.getListData();
+    this.mockDataService.getData().subscribe(data => {
+      this.data = data;
       this.questions = this.flatten(this.data.map(o => o.examples));
       this.currentQuestion = this.getRandomQuestion();
-    } else {
-      this.mockDataService.getData().subscribe(data => {
-        this.data = data;
-        this.questions = this.flatten(this.data.map(o => o.examples));
-        this.currentQuestion = this.getRandomQuestion();
-      });
-    }
+    });
   }
 
   public answer(): void {
@@ -47,7 +41,7 @@ export class MainComponent implements OnInit {
       this.incorrectAnswers++;
       console.log('FAILURE');
     }
-    if (this.questionCount > this.questions.length || this.questionCount >= this.maxQuestionCount) {
+    if (!this.questions.length) {
       this.currentQuestion = {text: 'Game Over!', answer: '', meaning: ''};
       this.endGame();
     } else {

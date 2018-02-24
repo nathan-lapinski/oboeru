@@ -591,23 +591,16 @@ export class MockDataService {
   constructor() { }
 
   public getData(): Observable<any> {
-    return Observable.of(this.kanken8);
+    // TODO: once there is backend support for custom lists, this goes away
+    return this.customListData.length ? Observable.of(this.customListData) : Observable.of(this.kanken8);
   }
 
   public getKanji(kanji: any): any {
     return Observable.of(this.kanken8.find(c => c.character === kanji));
   }
 
-  public getListData(): any {
-    return this.customListData;
-  }
-
   public addListData(data: any): void {
-    this.customListData.push(data);
-  }
-
-  public hasListData(): boolean {
-    return this.customListData.length > 0;
+    this.customListData = data;
   }
 
 }
