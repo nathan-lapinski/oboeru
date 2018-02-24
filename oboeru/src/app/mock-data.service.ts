@@ -588,6 +588,105 @@ export class MockDataService {
       }]
     }*/
   ];
+
+  private kanken7: Kanji[] = [
+    {
+      character: '愛',
+      meanings: ['love'],
+      on: ['アイ'],
+      kun: [],
+      strokes: 10,
+      examples: [{
+        text: '愛犬',
+        answer: 'あいけん',
+        target: '愛犬',
+        meaning: 'pet dog; beloved dog​'
+      }, {
+        text: '愛情',
+        answer: 'あいじょう',
+        target: '愛情',
+        meaning: 'love; affection​'
+      }, {
+        text: '愛読',
+        answer: 'あいどく',
+        target: '愛読',
+        meaning: 'reading with pleasure​'
+      }, {
+        text: '愛用している',
+        answer: 'あいよう',
+        target: '愛用',
+        meaning: 'favorite; favourite; habitual use​, cherish'
+      }, {
+        text: '親愛',
+        answer: 'しんあい',
+        target: '親愛',
+        meaning: 'deep affection​, beloved'
+      }, {
+        text: '博愛',
+        answer: 'はくあい',
+        target: '博愛',
+        meaning: 'charity; benevolence; philanthropy;'
+      }, {
+        text: '友愛',
+        answer: 'ゆうあい',
+        target: '友愛',
+        meaning: 'fraternity; friendship​'
+      }, {
+        text: '恋愛',
+        answer: 'れんあい',
+        target: '恋愛',
+        meaning: 'love; love-making; passion; emotion; affections​'
+      }]
+    },
+    {
+      character: '案',
+      meanings: ['Plan, suggestion, draft, ponder, fear, proposition, idea, expectation, bill, worry'],
+      on: ['アン'],
+      kun: [],
+      strokes: 13,
+      examples: [{
+        text: '案外',
+        answer: 'あんがい',
+        target: '案外',
+        meaning: 'unexpectedly; surprisingly​'
+      }, {
+        text: '案内',
+        answer: 'あんない',
+        target: '案内',
+        meaning: 'guidance; leading (the way); showing around​'
+      }, {
+        text: '案文',
+        answer: 'あんぶん',
+        target: '案文',
+        meaning: 'draft; draught'
+      }, {
+        text: '原案',
+        answer: 'げんあん',
+        target: '原案',
+        meaning: 'original plan; original bill; motion; draft; draught'
+      }, {
+        text: '思案',
+        answer: 'しあん',
+        target: '思案',
+        meaning: 'thought; consideration; deliberation; reflection; rumination; pondering​'
+      }, {
+        text: '新案',
+        answer: 'しんあん',
+        target: '新案',
+        meaning: 'new idea or design; novelty​'
+      }, {
+        text: '答案',
+        answer: 'とうあん',
+        target: '答案',
+        meaning: 'examination paper; examination script; answer sheet​'
+      }, {
+        text: '名案',
+        answer: 'めいあん',
+        target: '名案',
+        meaning: 'good idea​'
+      }]
+    },
+  ];
   constructor() { }
 
   public getData(): Observable<any> {
