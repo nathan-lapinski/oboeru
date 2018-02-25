@@ -371,8 +371,8 @@ export class MockDataService {
         meaning: 'sports ground; playing field; playground​'
       }, {
         text: '幸運',
-        answer: 'えきいん',
-        target: '駅員',
+        answer: 'こううん',
+        target: '幸運',
         meaning: 'good luck; fortune​'
       }, {
         text: '荷物を運ぶ',
@@ -684,6 +684,95 @@ export class MockDataService {
         answer: 'めいあん',
         target: '名案',
         meaning: 'good idea​'
+      }]
+    },
+  ];
+
+  private kanken6: Kanji[] = [
+    {
+      character: '総',
+      meanings: ['general, whole, all, full, total'],
+      on: ['ソウ'],
+      kun: [],
+      strokes: 14,
+      examples: [{
+        text: '総意',
+        answer: 'そうい',
+        target: '総意',
+        meaning: 'consensus of opinion'
+      }, {
+        text: '総会',
+        answer: 'そうかい',
+        target: '総会',
+        meaning: 'general meeting​'
+      }, {
+        text: '総額',
+        answer: 'そうがく',
+        target: '総額',
+        meaning: 'sum total; total amount​'
+      }, {
+        text: '総括',
+        answer: 'そうかつ',
+        target: '総括',
+        meaning: 'synthesis; recap; generalize; generalise​'
+      }, {
+        text: '総合',
+        answer: 'そうごう',
+        target: '総合',
+        meaning: 'synthesis; coordination; putting together; integration; composite​'
+      }, {
+        text: '総出',
+        answer: 'そうで',
+        target: '総出',
+        meaning: 'appearing all together​'
+      }, {
+        text: '総理大臣',
+        answer: 'そうりだいじん',
+        target: '総理大臣',
+        meaning: 'prime minister (as the head of a cabinet government); '
+      }]
+    },
+    {
+      character: '造',
+      meanings: ['create, make, structure, physique'],
+      on: ['ゾウ'],
+      kun: ['つくる'],
+      strokes: 10,
+      examples: [{
+        text: '造花',
+        answer: 'ぞうか',
+        target: '造花',
+        meaning: 'artificial flowers'
+      }, {
+        text: '造船',
+        answer: 'ぞうせん',
+        target: '造船',
+        meaning: 'shipbuilding'
+      }, {
+        text: '改造',
+        answer: 'かいぞう',
+        target: '改造',
+        meaning: 'remodeling; remodelling; restructuring; reconstruction;'
+      }, {
+        text: '建造',
+        answer: 'けんぞう',
+        target: '建造',
+        meaning: 'building; construction​'
+      }, {
+        text: '構造',
+        answer: 'こうぞう',
+        target: '構造',
+        meaning: 'structure; construction; makeup; framework; organization; pattern'
+      }, {
+        text: '製造',
+        answer: 'せいぞう',
+        target: '製造',
+        meaning: 'manufacture; production​'
+      }, {
+        text: '船を造る',
+        answer: 'つくる',
+        target: '造る',
+        meaning: 'To build a ship'
       }]
     },
   ];
