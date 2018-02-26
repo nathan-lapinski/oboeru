@@ -11,6 +11,12 @@
   display: block;
 }
 
+#meaningBox {
+  margin: auto;
+  width: 200px;
+  display: block;
+}
+
 #answerButton {
   margin: auto;
   width: 100px;
