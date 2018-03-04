@@ -992,25 +992,25 @@ export class MockDataService {
       kun: [''],
       strokes: 16,
       examples: [{
-        text: '造花',
-        answer: 'ぞうか',
-        target: '造花',
-        meaning: 'artificial flowers'
+        text: 'アフリカたいり大陸のどこかへ行くとしたらどこが一番衛生的で安全ですか',
+        answer: 'えいせい',
+        target: '衛生',
+        meaning: 'If I were going to the African continent, where would be the safest and most sanitary place?'
       }, {
-        text: '造船',
-        answer: 'ぞうせん',
-        target: '造船',
-        meaning: 'shipbuilding'
+        text: '月は地球の衛星だ',
+        answer: 'えいせい',
+        target: '衛星',
+        meaning: 'The moon is the Earths satellite'
       }, {
-        text: '改造',
-        answer: 'かいぞう',
-        target: '改造',
-        meaning: 'remodeling; remodelling; restructuring; reconstruction;'
+        text: '衛兵',
+        answer: 'えいへい',
+        target: '衛兵',
+        meaning: 'palace guard'
       }, {
-        text: '建造',
-        answer: 'けんぞう',
-        target: '建造',
-        meaning: 'building; construction​'
+        text: '彼は多数の護衛を連れて旅行した',
+        answer: 'ごえい',
+        target: '護衛',
+        meaning: 'He travelled with a large escort'
       }, {
         text: '構造',
         answer: 'こうぞう',
