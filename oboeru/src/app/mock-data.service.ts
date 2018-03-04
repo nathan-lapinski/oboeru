@@ -775,12 +775,308 @@ export class MockDataService {
         meaning: 'To build a ship'
       }]
     },
+    {
+      character: '圧',
+      meanings: ['Pressure, push, overwhelm, oppress, dominate'],
+      on: ['アツ'],
+      kun: [],
+      strokes: 5,
+      examples: [{
+        text: 'その党は総選挙で圧勝した',
+        answer: 'あっしょう',
+        target: '圧勝',
+        meaning: 'the party won a sweeping victory at the general election'
+      }, {
+        text: 'その国の政府は国民を圧迫している',
+        answer: 'あっぱく',
+        target: '圧迫',
+        meaning: 'the government of that country oppresses its people'
+      }, {
+        text: 'その計画は世論の圧力で中止になった',
+        answer: 'あつりょく',
+        target: '圧力',
+        meaning: 'The plan was given up under the pressure of public opinion'
+      }, {
+        text: '飛行機でお酒飲むと気圧のせいか酔いやすい',
+        answer: 'きあつ',
+        target: '気圧',
+        meaning: 'Maybe its the low air pressure that means youll get drunk more easily on planes'
+      }, {
+        text: '電圧',
+        answer: 'でんあつ',
+        target: '電圧',
+        meaning: 'voltage'
+      }, {
+        text: '水圧',
+        answer: 'すいあつ',
+        target: '水圧',
+        meaning: 'hydraulic pressure, water pressure'
+      }, {
+        text: '私は血圧が低いです',
+        answer: 'けつあつ',
+        target: '血圧',
+        meaning: 'I have low blood pressure'
+      }]
+    },
+    {
+      character: '移',
+      meanings: ['shift, move, change, drift, catch (cold, fire), pass into'],
+      on: ['イ'],
+      kun: ['うつる', 'うつす'],
+      strokes: 11,
+      examples: [{
+        text: '初期の人類は世界のあらゆる所に移住した',
+        answer: 'いじゅう',
+        target: '移住',
+        meaning: 'early man migrated to all parts of the world'
+      }, {
+        text: '新しいビルへの移転にわくわくしています',
+        answer: 'いてん',
+        target: '移転',
+        meaning: 'we are excited about the move to the new building'
+      }, {
+        text: '床を掃除するのでお願いですからいすをあの隅の方に移動してもらえませんか',
+        answer: 'いどう',
+        target: '移動',
+        meaning: 'would you do me a favor by moving that chair over to the corner so that I can sweep the floor?'
+      }, {
+        text: 'アメリカは移民の国である',
+        answer: 'いみん',
+        target: '移民',
+        meaning: 'America is a land of immigrants'
+      }, {
+        text: '変移',
+        answer: 'へんい',
+        target: '変移',
+        meaning: 'change, alteration, transmutation, mutation'
+      }, {
+        text: '推移',
+        answer: 'すいい',
+        target: '推移',
+        meaning: 'transition, change'
+      }, {
+        text: '画像をクリックすると次ページへ移ります',
+        answer: 'うつ',
+        target: '移',
+        meaning: 'Click the picture to go to the next page.'
+      }]
+    },
+    {
+      character: '因',
+      meanings: ['cause, factor, be associated with, depend on, be limited to'],
+      on: ['イン'],
+      kun: ['よる'],
+      strokes: 6,
+      examples: [{
+        text: '親の因果が子に報いる',
+        answer: 'いんが',
+        target: '因果',
+        meaning: 'the sins of the fathers are visited upon the children'
+      }, {
+        text: '私はただ因習に従ったまでだ',
+        answer: 'いんしゅう',
+        target: '因習',
+        meaning: 'i just followed convention'
+      }, {
+        text: '何が原因で彼を信用していないのだろうと考えてみた',
+        answer: 'げんいん',
+        target: '原因',
+        meaning: 'I tried thinking about why it was that I didnt trust him'
+      }, {
+        text: '彼は自分の敗因を私のせいだと責めた',
+        answer: 'はいいん',
+        target: '敗因',
+        meaning: 'he accused me of causing his defeat'
+      }, {
+        text: '値段は決断をする際に非常に重要な要因となる',
+        answer: 'よういん',
+        target: '要因',
+        meaning: 'cost is a definite factor in making our decision'
+      }, {
+        text: 'この理由により著者に関する信憑性は資料の信憑性に因っているのである',
+        answer: 'よ',
+        target: '因る',
+        meaning: 'For this reason, the credibility of the books authors rests on the credibility of their sources'
+      }]
+    },
+    {
+      character: '永',
+      meanings: ['eternity, long, lengthy'],
+      on: ['エイ'],
+      kun: ['ながい'],
+      strokes: 5,
+      examples: [{
+        text: '永遠に若い',
+        answer: 'えいえん',
+        target: '永遠',
+        meaning: 'forever young'
+      }, {
+        text: '私は永久に生きたいのです',
+        answer: 'えいきゅう',
+        target: '永久',
+        meaning: 'I want to live forever'
+      }, {
+        text: '彼女はアメリカに永住することに決めた',
+        answer: 'えいじゅう',
+        target: '永住',
+        meaning: 'she has decided to live in America for good'
+      }, {
+        text: '永世',
+        answer: 'えいせい',
+        target: '永世',
+        meaning: 'eternitiy, perpetuity, immortality, permanence'
+      }, {
+        text: '永続的な家を持たなかったから',
+        answer: 'えいぞく',
+        target: '永続',
+        meaning: 'becuase they did not have a permanent home'
+      }, {
+        text: '末永く',
+        answer: 'すえながく',
+        target: '末永く',
+        meaning: 'forever, everlastingly, for many years to come'
+      }, {
+        text: '日永',
+        answer: 'ひなが',
+        target: '日永',
+        meaning: 'long day (esp of spring)'
+      }]
+    },
+    {
+      character: '営',
+      meanings: ['occupation, camp, perform, build, conduct (business)'],
+      on: ['エイ'],
+      kun: ['いとなむ'],
+      strokes: 12,
+      examples: [{
+        text: '平常通り営業いたします',
+        answer: 'えいぎょう',
+        target: '営業',
+        meaning: 'business as usual'
+      }, {
+        text: '彼は営利のためにこれをした',
+        answer: 'えいり',
+        target: '営利',
+        meaning: 'he has done this for profit (money-making)'
+      }, {
+        text: '彼の父は会社をいくつかを運営している',
+        answer: 'うんえい',
+        target: '運営',
+        meaning: 'his father administers some companies (management, administration, operation)'
+      }, {
+        text: '彼女は美容院を経営している',
+        answer: 'けいえい',
+        target: '経営',
+        meaning: 'she runs a beauty shop (to manage, to operate a business)'
+      }, {
+        text: '毎日市営プールに行く',
+        answer: 'しえい',
+        target: '市営',
+        meaning: 'I go to the city pool everyday (municipal management)'
+      }, {
+        text: '世界は二つの陣営に分かれている',
+        answer: 'じんえい',
+        target: '陣営',
+        meaning: 'the world is split into two camps (camp, faction)'
+      }, {
+        text: '生活を営む',
+        answer: 'いとなむ',
+        target: '営む',
+        meaning: 'keep living life'
+      }]
+    },
+    {
+      character: '衛',
+      meanings: ['defense, protection'],
+      on: ['エイ'],
+      kun: [''],
+      strokes: 16,
+      examples: [{
+        text: '造花',
+        answer: 'ぞうか',
+        target: '造花',
+        meaning: 'artificial flowers'
+      }, {
+        text: '造船',
+        answer: 'ぞうせん',
+        target: '造船',
+        meaning: 'shipbuilding'
+      }, {
+        text: '改造',
+        answer: 'かいぞう',
+        target: '改造',
+        meaning: 'remodeling; remodelling; restructuring; reconstruction;'
+      }, {
+        text: '建造',
+        answer: 'けんぞう',
+        target: '建造',
+        meaning: 'building; construction​'
+      }, {
+        text: '構造',
+        answer: 'こうぞう',
+        target: '構造',
+        meaning: 'structure; construction; makeup; framework; organization; pattern'
+      }, {
+        text: '製造',
+        answer: 'せいぞう',
+        target: '製造',
+        meaning: 'manufacture; production​'
+      }, {
+        text: '船を造る',
+        answer: 'つくる',
+        target: '造る',
+        meaning: 'To build a ship'
+      }]
+    },
+    {
+      character: '易',
+      meanings: ['easy, ready to, simple, fortune-telling, divination'],
+      on: ['エキ', 'イ'],
+      kun: ['やさしい'],
+      strokes: 8,
+      examples: [{
+        text: '造花',
+        answer: 'ぞうか',
+        target: '造花',
+        meaning: 'artificial flowers'
+      }, {
+        text: '造船',
+        answer: 'ぞうせん',
+        target: '造船',
+        meaning: 'shipbuilding'
+      }, {
+        text: '改造',
+        answer: 'かいぞう',
+        target: '改造',
+        meaning: 'remodeling; remodelling; restructuring; reconstruction;'
+      }, {
+        text: '建造',
+        answer: 'けんぞう',
+        target: '建造',
+        meaning: 'building; construction​'
+      }, {
+        text: '構造',
+        answer: 'こうぞう',
+        target: '構造',
+        meaning: 'structure; construction; makeup; framework; organization; pattern'
+      }, {
+        text: '製造',
+        answer: 'せいぞう',
+        target: '製造',
+        meaning: 'manufacture; production​'
+      }, {
+        text: '船を造る',
+        answer: 'つくる',
+        target: '造る',
+        meaning: 'To build a ship'
+      }]
+    }
   ];
   constructor() { }
 
   public getData(): Observable<any> {
     // TODO: once there is backend support for custom lists, this goes away
-    return this.customListData.length ? Observable.of(this.customListData) : Observable.of(this.kanken8);
+    return this.customListData.length ? Observable.of(this.customListData) : Observable.of(this.kanken6);
   }
 
   public getKanji(kanji: any): any {
