@@ -1012,20 +1012,20 @@ export class MockDataService {
         target: '護衛',
         meaning: 'He travelled with a large escort'
       }, {
-        text: '構造',
-        answer: 'こうぞう',
-        target: '構造',
-        meaning: 'structure; construction; makeup; framework; organization; pattern'
+        text: '自衛',
+        answer: 'じえい',
+        target: '自衛',
+        meaning: 'self defense'
       }, {
-        text: '製造',
-        answer: 'せいぞう',
-        target: '製造',
-        meaning: 'manufacture; production​'
+        text: '彼らの鞄は門の所で守衛に調べられた',
+        answer: 'しゅえい',
+        target: '守衛',
+        meaning: 'their bags were checked by a security guard at the gate'
       }, {
-        text: '船を造る',
-        answer: 'つくる',
-        target: '造る',
-        meaning: 'To build a ship'
+        text: 'その防衛計画に関する見通しは暗い',
+        answer: 'ぼうえい',
+        target: '防衛',
+        meaning: 'The outlook for the defense program is dismal (defense)'
       }]
     },
     {
@@ -1035,40 +1035,35 @@ export class MockDataService {
       kun: ['やさしい'],
       strokes: 8,
       examples: [{
-        text: '造花',
-        answer: 'ぞうか',
-        target: '造花',
-        meaning: 'artificial flowers'
+        text: '昨日の易者の占いなんか気にすることないよ',
+        answer: 'えきしゃ',
+        target: '易者',
+        meaning: 'what the fortune teller said yesterday is nothing to be worried about'
       }, {
-        text: '造船',
-        answer: 'ぞうせん',
-        target: '造船',
-        meaning: 'shipbuilding'
+        text: '日本は貿易に頼っている',
+        answer: 'ぼうえき',
+        target: '貿易',
+        meaning: 'Japan depends on foreign trade'
       }, {
-        text: '改造',
-        answer: 'かいぞう',
-        target: '改造',
-        meaning: 'remodeling; remodelling; restructuring; reconstruction;'
+        text: '安易',
+        answer: 'あんい',
+        target: '安易',
+        meaning: 'easy, simple'
       }, {
-        text: '建造',
-        answer: 'けんぞう',
-        target: '建造',
-        meaning: 'building; construction​'
+        text: '平易な日本語で書かれているのでこの本は読みやすい',
+        answer: 'へいい',
+        target: '平易',
+        meaning: 'written in plain Japanese, this book is easy to read (plain, easy, simple)'
       }, {
-        text: '構造',
-        answer: 'こうぞう',
-        target: '構造',
-        meaning: 'structure; construction; makeup; framework; organization; pattern'
+        text: '翻訳は決して容易ではない',
+        answer: 'ようい',
+        target: '容易',
+        meaning: 'translation is by no means easy (easy, plain, simple)'
       }, {
-        text: '製造',
-        answer: 'せいぞう',
-        target: '製造',
-        meaning: 'manufacture; production​'
-      }, {
-        text: '船を造る',
-        answer: 'つくる',
-        target: '造る',
-        meaning: 'To build a ship'
+        text: '易しい問題',
+        answer: '易しい',
+        target: '易しい',
+        meaning: 'easy problem'
       }]
     }
   ];
